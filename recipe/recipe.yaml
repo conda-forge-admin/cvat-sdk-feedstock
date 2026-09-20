@@ -70,6 +70,9 @@ outputs:
       - python:
           imports:
             - cvat_sdk
+          python_version:
+            - ${{ python_min }}.*
+            - "*"
       - requirements:
           run:
             - pip
@@ -96,6 +99,9 @@ outputs:
       - python:
           imports:
             - cvat_sdk
+          python_version:
+            - ${{ python_min }}.*
+            - "*"
       - requirements:
           run:
             - pip
